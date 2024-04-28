@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const newSchema = new mongoose.Schema({
+const budgetSchema = new mongoose.Schema({
     
           "ref_id":{
             type:mongoose.Schema.Types.ObjectId,
@@ -17,6 +17,6 @@ const newSchema = new mongoose.Schema({
        
 });
 
-const UserBudget = mongoose.model("Budget", newSchema);
+const Budget = mongoose.model("Budget", budgetSchema);
 
-export default UserBudget;
+export default Budget;

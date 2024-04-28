@@ -6,11 +6,14 @@ const newSchema = new mongoose.Schema({
             type:mongoose.Schema.Types.ObjectId,
             ref:"user"
             },
-            "time":String,
             "link":String
          
        
-});
+},
+{
+  timestamps: true
+}
+);
 
 const UserPdf = mongoose.model("PDF", newSchema);
 
